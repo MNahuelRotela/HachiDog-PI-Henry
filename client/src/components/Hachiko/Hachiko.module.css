@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.generaldiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../img/hachikobackscaled.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+.hachiko {
+    width: 20rem;
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+}
+.sliders{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.backtext{
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.backtoimg{
+    width: 10%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}

@@ -1,0 +1,40 @@
+.divgeneral{
+  position: absolute;
+  top: 16%;
+  left: 27%;
+}
+
+section{
+  display: flex;
+  width: 675px;
+  height: 483.75px;
+  opacity: 1;
+}
+
+section .Nav .DogImg{
+  width: 84.375px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .9999;
+  transition: .5s ease;
+}
+
+section .Nav .DogImg:hover{
+  cursor: pointer;
+  opacity: 1;
+  filter: contrast(120%);
+  flex-grow: 1;
+  width: 337.5px;
+}
+
+section .Nav {
+  width: 168.75px;
+  display:flex;
+  transition: .5s ease;
+  
+
+  
+}
+section .Nav:hover{
+  width: 337.5px;
+}

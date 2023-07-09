@@ -1,0 +1,87 @@
+.card {
+    width: 320px;
+    height: 400px;
+    border-radius: 20px;
+    background:rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 1.4rem;
+    border: 2px solid #1A180B;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin: 10px;
+    /* left: 80vh; */
+}
+
+
+.carddetails {
+    padding-top: 1rem;
+    color: rgb(255, 255, 255);
+    gap: .5em;
+    place-content: center;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.cardbutton {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #4C4B45;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.textbody {
+    color: #ffffff;
+    font-size: 1.1rem;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: black;
+}
+
+
+.texttitle {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.card:hover {
+    border-color: #111406;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .cardbutton {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.dogCard {
+display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.dogImg {
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.link{
+    text-decoration: none;
+}

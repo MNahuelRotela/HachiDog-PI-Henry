@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.generaldiv {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../img/backgroundgeneral.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.place {
+    height: 100%;
+    width: 500%;
+    background-image: url("../../img/backplace.png");
+    /* background-position: center; */
+    background-size:200vh;
+    position: absolute;
+    left: 0 ;
+    animation: place 20s linear infinite ;   
+}
+@keyframes place {
+    100%{
+        transform: translateX(-1400px);
+    }
+}
+
+
+
+.dirt {
+    height: 100%;
+    width: 500%;
+    background-image: url("../../img/dirtfloor.png") ;
+    position: absolute;
+    bottom: -7%;
+    animation: dirt 5s linear infinite;    
+}
+@keyframes dirt {
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+
+.mountain {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/mountain.PNG");
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size:100vh;
+    position: absolute;
+    left: 100vh;   
+    top: 50%;
+}
+
+.dogs {
+    height: 100%;
+    width: 100%;
+    background-image: url("../../img/dogsrunning.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    top:76%;
+}
+.nav{
+    position: absolute;
+    right: 20vh;
+    top: 40vh;
+}
+
+.button{
+    background:rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    width: 30%;
+    position: absolute;
+    left: 0%;
+    top: 12%;
+    animation:shake-vertical 15s linear both infinite;
+}
+.slogan{
+    width: 60%;
+    position: absolute;
+    top: 10%;
+    left: 19%;
+    animation:shake-vertical 15s linear both infinite;
+}
+
+@keyframes shake-vertical
+{0%,100%{transform:translateY(0) translateX(0)}
+10%,30%,50%,70%{transform:translateY(-15px) translateX(-15px)}
+20%,40%,60%{transform:translateY(15px)translateX(23px)}
+80%{transform:translateY(12px)translateX(6px)}
+90%{transform:translateY(-12px)translateX(-8px)}}

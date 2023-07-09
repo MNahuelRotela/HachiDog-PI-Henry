@@ -1,0 +1,19 @@
+
+nav{
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+nav .imgdog{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+nav .imgdog:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}

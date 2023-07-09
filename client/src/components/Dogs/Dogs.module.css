@@ -1,0 +1,106 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.link{
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    color: #090909;
+    padding: 0.5em 1.2em;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #A19F90;
+    border: 1px solid #A19F90;
+    transition: all .3s;
+
+}
+
+button:active {
+
+    background: #4C4B45;
+}
+
+button:disabled {
+    background: white;
+    cursor: default;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.filtros {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+input {
+    border: none;
+    padding: 0.7rem;
+    border-radius: 15px;
+    background: #e8e8e8;
+
+    transition: 0.3s;
+}
+
+input:focus {
+    outline-color: #4C4B45;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #A19F90,
+        inset -20px -20px 60px #67666F;
+    transition: 0.3s;
+}
+
+.selectStyle {
+
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #e8e8e8;
+    background-image: none;
+    padding: 0.6rem;
+    color: #212121;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 15px;
+    line-height: 3;
+
+}
+
+
+.selectStyle::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #e8e8e8;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+.generaldiv{
+    background-image: url("../../img/dogsback.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}

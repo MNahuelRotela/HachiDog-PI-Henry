@@ -1,0 +1,207 @@
+.cardContent {
+
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 54px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px #454545,
+        -15px -15px 30px #1c1c1c;
+        background: rgba(0, 0, 0, 0.2);
+    max-height: 800px;
+    max-width: 1000px;
+}
+
+
+.contIzqDetails {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contDerDetails {
+
+    padding: 1rem;
+    text-align: initial;
+}
+
+.contentDetails {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+
+}
+
+.contLoader {
+
+    position: relative;
+    width: 100%;
+    background: transparent;
+
+
+    justify-content: center;
+}
+.Loader{
+    width: 200%;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+}
+
+.pDetails {
+    padding: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.3rem, 0.5rem + 5vw, 1.3rem);
+    color: #ffffff;
+    font-size: 1.1rem;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: black;
+}
+
+.imgContainer {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    max-height: 600px;
+    border-radius: 0px 0px 0px 15px
+}
+
+.title {
+    background-color: #181111;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-radius: 30px 30px 0px 0px;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between
+}
+
+.btnBackDetails {
+    cursor: pointer;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    margin-top: 30px;
+
+}
+
+.btnBackDetails::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #4C4B45;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.btnBackDetails:hover {
+    color: #e8e8e8;
+    border: 1px solid #f1efef;
+}
+
+.btnBackDetails:hover::before {
+    width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 25% auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 30px;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #4C4B45;
+}
+
+.popup .contentPop {
+    max-height: 30%;
+    overflow: auto;
+}
+
+.buttonDelete {
+    font-size: 1em;
+    padding: 10px;
+    color: #fff;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    margin-right: 15px;
+}
+
+.buttonDelete:hover {
+    background: #4C4B45;
+}
+.generaldiv{
+    background-image: url("../../img/detailback.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.texto{
+    color: #ffffff;
+    padding-left: 35%;
+    font-size: 2.1rem;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: black;
+}
